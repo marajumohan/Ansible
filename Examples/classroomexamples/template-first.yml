@@ -6,4 +6,8 @@
     template:
       src: first.j2
       dest: /home/ansible/first
+  - name: second template task
+    template:
+      src: second.j2
+      dest: /home/ansible/second
   
