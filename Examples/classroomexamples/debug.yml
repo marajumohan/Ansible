@@ -3,3 +3,7 @@
   tasks:
   - name: execute any basic linux command
     command: hostname -f
+    register: cmd_content
+  - name: print variables contents
+    debug:
+      msg: "{{ cmd_content }}"
