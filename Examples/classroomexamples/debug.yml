@@ -1,5 +1,9 @@
 ---
 - hosts: dbserver
+  vars_prompt:
+  - name: "some_password"
+    prompt: "Enter password"
+    private: yes
   tasks:
   - name: execute any basic linux command
     command: hostname -f
