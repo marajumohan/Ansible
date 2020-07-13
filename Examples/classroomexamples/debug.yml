@@ -7,7 +7,7 @@
   - name: print command result
     debug:
       msg: "{{ cmd_content.stdout }}"
-    when: cmd_content.stdout == ""
+    when: cmd_content.stderr == ""
   - name: print command error if present
     debug:
       msg: "{{ cmd_content.stderr }}"
