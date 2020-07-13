@@ -1,0 +1,5 @@
+---
+- hosts: dbserver
+  tasks:
+  - name: execute any basic linux command
+    command: hostname -f
